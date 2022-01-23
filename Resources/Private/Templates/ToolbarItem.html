@@ -1,0 +1,17 @@
+<html
+        xmlns:core="http://typo3.org/ns/TYPO3/CMS/Core/ViewHelpers"
+        xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers"
+        data-namespace-typo3-fluid="true">
+
+<f:variable name="startTimer" value="{f:translate(key: 'toolbar.pomodoro.start.title', extensionName: 'pomodoro')}"/>
+<f:variable name="endTimer" value="{f:translate(key: 'toolbar.pomodoro.end.title', extensionName: 'pomodoro')}"/>
+
+<a href="#" data-time="1500" class="toolbar-item-icon toolbar-item-link pomodoro-play" title="{startTimer}">
+    <core:icon identifier="pomodoro-play" alternativeMarkupIdentifier="inline"/>
+</a>
+<a href="#" style="display:none" class="toolbar-item-icon toolbar-item-link pomodoro-stop" title="{endTimer}">
+    <core:icon identifier="pomodoro-stop" alternativeMarkupIdentifier="inline"/>
+    <span class="toolbar-item-name" id="displayTime" title="Pomodoro Timer"></span>
+</a>
+
+</html>

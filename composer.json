@@ -1,0 +1,26 @@
+{
+    "name": "ao/pomodoro",
+    "description": "Simple Pomodoro Timer for TYPO3.",
+    "type": "typo3-cms-extension",
+    "keywords": [
+        "TYPO3",
+        "pomodoro"
+    ],
+    "license": [
+        "GPL-2.0-or-later"
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "typo3/cms-core": "^11.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "AO\\Pomodoro\\": "Classes/"
+        }
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "pomodoro"
+        }
+    }
+}

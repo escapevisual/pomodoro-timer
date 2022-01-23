@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" product-name="pomodoro">
+		<header/>
+		<body>
+			<trans-unit id="toolbar.pomodoro.start.title">
+				<source>Start pomodoro timer</source>
+			</trans-unit>
+			<trans-unit id="toolbar.pomodoro.end.title">
+				<source>End pomodoro timer</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
