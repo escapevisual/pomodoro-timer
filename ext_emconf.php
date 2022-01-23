@@ -17,7 +17,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'AO\\Pomodoro\\' => 'Classes/',
+            'ESCAPEVISUAL\\Pomodoro\\' => 'Classes/',
         ],
     ],
 ];

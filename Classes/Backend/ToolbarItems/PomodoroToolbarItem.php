@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace AO\Pomodoro\Backend\ToolbarItems;
+namespace ESCAPEVISUAL\Pomodoro\Backend\ToolbarItems;
 
 use TYPO3\CMS\Backend\Toolbar\ToolbarItemInterface;
 use TYPO3\CMS\Core\Page\PageRenderer;
