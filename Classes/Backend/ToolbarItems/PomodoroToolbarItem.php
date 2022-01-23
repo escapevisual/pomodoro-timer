@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ESCAPEVISUAL\Pomodoro\Backend\ToolbarItems;
+namespace ESCAPEVISUAL\PomodoroTimer\Backend\ToolbarItems;
 
 use TYPO3\CMS\Backend\Toolbar\ToolbarItemInterface;
 use TYPO3\CMS\Core\Page\PageRenderer;
@@ -15,7 +15,7 @@ class PomodoroToolbarItem implements ToolbarItemInterface
     public function __construct()
     {
         $pageRenderer = GeneralUtility::makeInstance(PageRenderer::class);
-        $pageRenderer->loadRequireJsModule('TYPO3/CMS/Pomodoro/Pomodoro');
+        $pageRenderer->loadRequireJsModule('TYPO3/CMS/PomodoroTimer/Pomodoro');
     }
 
     public function checkAccess(): bool
@@ -52,11 +52,11 @@ class PomodoroToolbarItem implements ToolbarItemInterface
     {
         $view = GeneralUtility::makeInstance(StandaloneView::class);
 
-        $view->setLayoutRootPaths(['EXT:pomodoro/Resources/Private/Layouts']);
-        $view->setPartialRootPaths(['EXT:pomodoro/Resources/Private/Partials']);
-        $view->setTemplateRootPaths(['EXT:pomodoro/Resources/Private/Templates']);
+        $view->setLayoutRootPaths(['EXT:pomodoro_timer/Resources/Private/Layouts']);
+        $view->setPartialRootPaths(['EXT:pomodoro_timer/Resources/Private/Partials']);
+        $view->setTemplateRootPaths(['EXT:pomodoro_timer/Resources/Private/Templates']);
         $view->setTemplate($templateFilename);
-        $view->getRequest()->setControllerExtensionName('Pomodoro');
+        $view->getRequest()->setControllerExtensionName('PomodoroTimer');
 
         return $view;
     }

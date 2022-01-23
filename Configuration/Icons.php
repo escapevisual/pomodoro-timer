@@ -7,10 +7,10 @@ use TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider;
 return [
     'pomodoro-play' => [
         'provider' => SvgIconProvider::class,
-        'source' => 'EXT:pomodoro/Resources/Public/Icons/timer-play.svg',
+        'source' => 'EXT:pomodoro_timer/Resources/Public/Icons/timer-play.svg',
     ],
     'pomodoro-stop' => [
         'provider' => SvgIconProvider::class,
-        'source' => 'EXT:pomodoro/Resources/Public/Icons/timer-stop.svg',
+        'source' => 'EXT:pomodoro_timer/Resources/Public/Icons/timer-stop.svg',
     ],
 ];

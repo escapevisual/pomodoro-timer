@@ -1,5 +1,5 @@
 {
-    "name": "escapevisual/pomodoro",
+    "name": "escapevisual/pomodoro_timer",
     "description": "Simple Pomodoro Timer for TYPO3.",
     "type": "typo3-cms-extension",
     "keywords": [
@@ -15,12 +15,12 @@
     },
     "autoload": {
         "psr-4": {
-            "ESCAPEVISUAL\\Pomodoro\\": "Classes/"
+            "ESCAPEVISUAL\\PomodoroTimer\\": "Classes/"
         }
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "pomodoro"
+            "extension-key": "pomodoro_timer"
         }
     }
 }
